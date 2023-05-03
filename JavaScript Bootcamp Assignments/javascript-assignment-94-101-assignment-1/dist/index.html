@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JavaScript Assignment 94-101 Assignment 1</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Your Code Here
+      document.addEventListener("DOMContentLoaded", function () {
+    let links = document.getElementsByTagName("a");
+    Array.from(links).forEach(function (link) {
+      if (link.classList.contains("open") && link.textContent === "Elzero") {
+        window.open(link.getAttribute("href"));
+      }
+    });
+  });
+      
+    </script>
+  </head>
+  <body>
+    
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    
+  </body>
+  
+</html>
+<!-- partial -->
+  
+</body>
+</html>
